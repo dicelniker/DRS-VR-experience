@@ -427,7 +427,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -6345285779419725671, guid: 74d194d76373bfc429fe3bbf2dd48890, type: 3}
   m_PrefabInstance: {fileID: 420825523}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &420825525
+--- !u!64 &420825526
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420825524}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8089699231438940418, guid: 74d194d76373bfc429fe3bbf2dd48890, type: 3}
+--- !u!114 &420825528
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -436,14 +450,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 420825524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff8c141078fcc047989a6de06ad07e6, type: 3}
+  m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 945072296}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8
   m_CustomReticle: {fileID: 8656087483511947524, guid: 50f8d835961353c4a8e0c4b77d7f8876, type: 3}
   m_FirstHoverEntered:
     m_PersistentCalls:
@@ -499,20 +513,6 @@ MonoBehaviour:
   m_TeleportationProvider: {fileID: 0}
   m_MatchOrientation: 0
   m_TeleportTrigger: 0
---- !u!64 &420825526
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420825524}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8089699231438940418, guid: 74d194d76373bfc429fe3bbf2dd48890, type: 3}
 --- !u!1 &613574095
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,6 +803,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &756321703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -645541053818710769, guid: d5db122d08d66c24e9aaf132079505f6, type: 3}
+  m_PrefabInstance: {fileID: 1404812772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &756321707
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756321703}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26898798, y: 0.0082378285, z: 0.4656881}
+  m_Center: {x: -0.050899163, y: 0.25949192, z: 0.66038185}
 --- !u!1 &763871749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,8 +1270,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937696796}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5756, y: -0.02, z: 6.11}
-  m_LocalScale: {x: 9.182263, y: 0, z: 11.014398}
+  m_LocalPosition: {x: -0.6647, y: -0.034, z: 6.2458}
+  m_LocalScale: {x: 6.955265, y: 0, z: 10.438127}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1973,7 +1991,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191703678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.161, z: 0}
+  m_LocalPosition: {x: 0, y: 0.136, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2132,6 +2150,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d5db122d08d66c24e9aaf132079505f6, type: 3}
       propertyPath: m_Name
       value: Tutorial room (with new and improved seperated floor)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016947883520261212, guid: d5db122d08d66c24e9aaf132079505f6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1141759264743920216, guid: d5db122d08d66c24e9aaf132079505f6, type: 3}
       propertyPath: m_Materials.Array.size
@@ -3319,7 +3341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678437866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.579, z: 0}
+  m_LocalPosition: {x: 0, y: 0.424, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
