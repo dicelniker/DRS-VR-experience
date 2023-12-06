@@ -4463,7 +4463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _detector: {fileID: 619825175}
   _characterController: {fileID: 1438280677}
-  pushBackStrength: 1
+  pushBackStrength: 2
 --- !u!65 &1716327987
 BoxCollider:
   m_ObjectHideFlags: 0
